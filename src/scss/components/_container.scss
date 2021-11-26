@@ -1,0 +1,15 @@
+@use '../abstracts/variables';
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+
+  @each $container in variables.$media-breakpoints {
+    @media (min-width: $container) {
+      max-width: $container;
+    }
+  }
+}
