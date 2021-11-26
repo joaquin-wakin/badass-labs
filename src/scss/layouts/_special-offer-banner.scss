@@ -1,0 +1,16 @@
+@use '../abstracts/variables';
+
+.special-offer-banner {
+  background-color: variables.$so-bg-color;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+
+  p {
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.25rem;
+    letter-spacing: 0.025em;
+  }
+}
