@@ -1,7 +1,18 @@
 @use '../abstracts/variables';
 
 .header {
+  user-select: none;
   background-color: variables.$header-bg-color;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+
+  > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.header-logo {
+  width: 12.25rem;
 }
