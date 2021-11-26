@@ -17,9 +17,16 @@ $xxl: 1536px;
 $media-breakpoints: ($sm, $md, $lg, $xl, $xxl);
 
 // Colors
+$primary: #b9db01;
 $white: #fff;
 $black: #000;
 
-// Document
+// body
 $body-bg-color: $white;
 $body-text-color: $black;
+
+// special-offer-banner
+$so-bg-color: $primary;
+
+// header
+$header-bg-color: $black;
