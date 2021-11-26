@@ -1,6 +1,7 @@
 @use '../abstracts/variables';
 
 .special-offer-banner {
+  user-select: none;
   background-color: variables.$so-bg-color;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
