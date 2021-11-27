@@ -1,3 +1,6 @@
+@use 'sass:math';
+@use '../abstracts/variables';
+
 .product-review-section {
   padding-top: 2.75rem;
   padding-bottom: 4rem;
@@ -6,4 +9,90 @@
 .product-review-grid {
   margin-top: 3.75rem;
   display: grid;
+  gap: 2rem;
+}
+
+.product-feedback-row {
+  margin-right: -1rem;
+  margin-left: -1rem;
+  display: flex;
+  flex-direction: column;
+
+  > div {
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    + div {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.product-review-feedback {
+  font-weight: 700;
+  color: variables.$gray;
+}
+
+.product-badge-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  > img ~ img {
+    margin-right: 0;
+    margin-left: 1rem;
+  }
+}
+
+.product-badge {
+  width: 5.25rem;
+}
+
+.product-detail-list {
+  margin-top: 0.875rem;
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+.product-review-cta {
+  margin-top: 1rem;
+  display: flex;
+  width: 100%;
+  border-radius: 9999px;
+  background-color: variables.$cta-bg-color;
+  padding: 1.625rem;
+}
+
+@media (min-width: variables.$sm) {
+  .product-feedback-row {
+    flex-direction: row;
+
+    > div + div {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    > div:nth-of-type(1) {
+      flex: 0 0 math.percentage(math.div(8, 12));
+    }
+
+    > div:nth-of-type(2) {
+      flex: 0 0 math.percentage(math.div(4, 12));
+    }
+  }
+}
+
+@media (min-width: variables.$lg) {
+  .product-review-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .product-badge-icons {
+    flex-direction: column;
+
+    > img ~ img {
+      margin-top: 1rem;
+      margin-left: 0;
+    }
+  }
 }
