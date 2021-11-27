@@ -82,6 +82,7 @@ module.exports = {
     'resize',
     'list-style-position',
     'list-style-type',
+    'list-style-image',
     'appearance',
     'grid-auto-columns',
     'grid-auto-flow',
