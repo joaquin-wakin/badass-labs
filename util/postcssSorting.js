@@ -89,6 +89,7 @@ module.exports = {
     'grid-auto-rows',
     'grid-template-columns',
     'grid-template-rows',
+    'flex-flow',
     'flex-direction',
     'flex-wrap',
     'place-content',
