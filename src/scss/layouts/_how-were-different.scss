@@ -1,8 +1,13 @@
+@use 'sass:math';
 @use '../abstracts/variables';
 
 .how-different-section {
   padding-top: 4rem;
   padding-bottom: 6rem;
+}
+
+.how-different-description {
+  margin-top: 0.75rem;
 }
 
 .how-different-grid {
@@ -24,8 +29,20 @@
   }
 }
 
+@media (min-width: variables.$md) {
+  .how-different-grid img {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: math.percentage(math.div(8, 12));
+  }
+}
+
 @media (min-width: variables.$lg) {
   .how-different-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    img {
+      max-width: 100%;
+    }
   }
 }
