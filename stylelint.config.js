@@ -6,6 +6,7 @@ module.exports = {
 
   plugins: ['stylelint-order', 'stylelint-scss'],
   rules: {
+    'color-function-notation': 'legacy',
     'declaration-colon-newline-after': null,
     'font-family-name-quotes': 'always-unless-keyword',
     'max-nesting-depth': 3,
