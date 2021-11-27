@@ -1,7 +1,7 @@
 @use '../abstracts/variables';
 
 .footer {
-  // background-color: variables.$footer-bg-color;
+  user-select: none;
   background-image: url('/images/footer-bg-image.png'), linear-gradient(0deg, #000, #000);
   background-size: cover;
   background-position: bottom center;
@@ -11,11 +11,58 @@
   color: variables.$footer-text-color;
 }
 
+.footer-description {
+  margin-top: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 56rem;
+}
+
+.footer-cta {
+  margin-top: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  border-radius: 9999px;
+  background-color: variables.$footer-cta-bg;
+  padding: 1.25rem 2.25rem;
+  color: variables.$footer-cta-text;
+  transition: box-shadow 300ms ease;
+
+  .cta-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1;
+    letter-spacing: -0.05em;
+  }
+
+  .arrow-right-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-image: svg-load('arrow-right-icon.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  > * + * {
+    margin-right: 0;
+    margin-left: 0.5rem;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 4px variables.$black, 0 0 0 6px rgba(variables.$primary, 0.5);
+    outline: none;
+  }
+}
+
 .footer-logo {
   margin-top: 2.5rem;
   margin-right: auto;
   margin-left: auto;
-  width: 14.375rem;
+  width: 15rem;
 }
 
 .footer-nav {
@@ -46,14 +93,16 @@
     flex-direction: row;
     justify-content: center;
 
-    > a {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
     > a + a {
+      margin-top: 0;
       margin-right: 0;
       margin-left: 1rem;
     }
+  }
+}
+
+@media (min-width: variables.$md) {
+  .footer-cta .cta-text {
+    font-size: 2.25rem;
   }
 }
