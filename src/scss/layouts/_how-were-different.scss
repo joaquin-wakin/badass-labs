@@ -9,6 +9,19 @@
   margin-top: 2.375rem;
   display: grid;
   gap: 2rem;
+
+  img {
+    border-radius: 1rem;
+  }
+
+  h3 {
+    margin-top: 2.25rem;
+  }
+
+  figcaption {
+    margin-top: 0.875rem;
+    color: variables.$gray;
+  }
 }
 
 @media (min-width: variables.$lg) {
