@@ -13,6 +13,15 @@
   letter-spacing: -0.025em;
 }
 
+.medium-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.small-text {
+  font-size: 1rem;
+}
+
 @media (min-width: variables.$sm) {
   .large-text {
     font-size: 2.25rem;
@@ -22,5 +31,14 @@
 @media (min-width: variables.$md) {
   .large-text {
     font-size: 2.5rem;
+  }
+
+  .medium-text {
+    font-size: 1.875rem;
+  }
+
+  .small-text {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
