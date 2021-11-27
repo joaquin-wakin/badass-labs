@@ -149,6 +149,7 @@ module.exports = {
     'letter-spacing',
     'color',
     'text-decoration',
+    'text-underline-offset',
     '-webkit-font-smoothing',
     '-moz-osx-font-smoothing',
     'caret-color',
