@@ -2,40 +2,29 @@
 @use '../abstracts/functions' as *;
 @use '../abstracts/variables' as *;
 
-.about-us {
-  padding-top: to-rem(160);
-  padding-bottom: to-rem(80);
-  color: $white;
-  background-image: $about-bg-image;
-  background-position: center;
-  background-size: cover;
+.about-us-section {
+  @apply pt-40 pb-20 text-white bg-about-us bg-center bg-cover;
 }
 
 .about-us-grid {
-  display: grid;
-  gap: to-rem(48);
-  align-items: center;
+  @apply grid gap-12 items-center;
 
   h2 {
-    color: $primary;
+    @apply text-primary;
   }
 
   p {
-    margin-top: to-rem(24);
+    @apply mt-6;
   }
-}
-
-.car-image {
-  border-radius: to-rem(12);
 }
 
 .cta {
   display: flex;
   align-items: center;
-  margin-top: to-rem(76);
+  margin-top: px-to-rem(76);
   margin-right: auto;
   margin-left: auto;
-  padding: to-rem(20) to-rem(30);
+  padding: px-to-rem(20) px-to-rem(30);
   color: $black;
   border-radius: 9999px;
   background-color: $primary;
@@ -50,7 +39,7 @@
   }
 
   > div + div {
-    margin-left: to-rem(8);
+    margin-left: px-to-rem(8);
   }
 }
 
