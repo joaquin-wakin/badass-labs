@@ -1,6 +1,8 @@
+@use 'functions';
+
 // Typography
-$sans-family: 'Gilroy', ui-sans-serif, system-ui, -apple-system, blinkmacsystemfont, 'Segoe UI',
-  roboto, 'Helvetica Neue', arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+$sans-family: ui-sans-serif, system-ui, -apple-system, blinkmacsystemfont, 'Segoe UI', roboto,
+  'Helvetica Neue', arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
   'Segoe UI Symbol', 'Noto Color Emoji';
 $serif-family: ui-serif, georgia, cambria, 'Times New Roman', times, serif;
 $mono-family: ui-monospace, sfmono-regular, menlo, monaco, consolas, 'Liberation Mono',
@@ -31,6 +33,9 @@ $so-bg-color: $primary;
 
 // header
 $header-bg-color: $black;
+
+// about-us
+$about-bg-image: url('/images/about-bg-image.jpg');
 
 // product-review
 $cta-bg-color: $primary;
