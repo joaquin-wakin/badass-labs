@@ -1,75 +1,75 @@
 @use '../abstracts/variables';
 
 .footer {
-  user-select: none;
-  background-image: url('/images/footer-bg-image.png'), linear-gradient(0deg, #000, #000);
-  background-size: cover;
-  background-position: bottom center;
-  background-repeat: no-repeat;
   padding-top: 4.25rem;
   padding-bottom: 2.875rem;
   color: variables.$footer-text-color;
+  background-image: url('/images/footer-bg-image.png'), linear-gradient(0deg, #000, #000);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  user-select: none;
 }
 
 .footer-description {
+  max-width: 56rem;
   margin-top: 0.75rem;
   margin-right: auto;
   margin-left: auto;
-  max-width: 56rem;
 }
 
 .footer-cta {
+  display: flex;
+  align-items: center;
   margin-top: 3rem;
   margin-right: auto;
   margin-left: auto;
-  display: flex;
-  align-items: center;
-  border-radius: 9999px;
-  background-color: variables.$footer-cta-bg;
   padding: 1.25rem 2.25rem;
   color: variables.$footer-cta-text;
+  border-radius: 9999px;
+  background-color: variables.$footer-cta-bg;
   transition: box-shadow 300ms ease;
 
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px variables.$black, 0 0 0 6px rgba(variables.$primary, 0.5);
+  }
+
   .cta-text {
-    font-size: 1.5rem;
     font-weight: 700;
+    font-size: 1.5rem;
     font-style: italic;
     line-height: 1;
     letter-spacing: -0.05em;
   }
 
   .arrow-right-icon {
-    height: 1.5rem;
     width: 1.5rem;
+    height: 1.5rem;
     background-image: svg-load('arrow-right-icon.svg');
-    background-size: cover;
-    background-position: center center;
     background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
   }
 
   > * + * {
     margin-right: 0;
     margin-left: 0.5rem;
   }
-
-  &:focus {
-    box-shadow: 0 0 0 4px variables.$black, 0 0 0 6px rgba(variables.$primary, 0.5);
-    outline: none;
-  }
 }
 
 .footer-logo {
+  width: 15rem;
   margin-top: 2.5rem;
   margin-right: auto;
   margin-left: auto;
-  width: 15rem;
 }
 
 .footer-nav {
-  margin-top: 1.375rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1.375rem;
 
   > a {
     text-decoration: underline;

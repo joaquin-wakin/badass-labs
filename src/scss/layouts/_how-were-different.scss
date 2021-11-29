@@ -11,9 +11,9 @@
 }
 
 .how-different-grid {
-  margin-top: 2.375rem;
   display: grid;
   gap: 2rem;
+  margin-top: 2.375rem;
 
   img {
     border-radius: 1rem;
@@ -31,9 +31,9 @@
 
 @media (min-width: variables.$md) {
   .how-different-grid img {
+    max-width: math.percentage(math.div(8, 12));
     margin-right: auto;
     margin-left: auto;
-    max-width: math.percentage(math.div(8, 12));
   }
 }
 

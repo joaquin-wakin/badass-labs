@@ -7,16 +7,16 @@
 }
 
 .product-review-grid {
-  margin-top: 3.75rem;
   display: grid;
   gap: 2rem;
+  margin-top: 3.75rem;
 }
 
 .product-feedback-row {
-  margin-right: -1rem;
-  margin-left: -1rem;
   display: flex;
   flex-direction: column;
+  margin-right: -1rem;
+  margin-left: -1rem;
 
   > div {
     padding-right: 1rem;
@@ -29,8 +29,8 @@
 }
 
 .product-review-feedback {
-  font-weight: 700;
   color: variables.$gray;
+  font-weight: 700;
 }
 
 .product-badge-icons {
@@ -55,12 +55,12 @@
 }
 
 .product-review-cta {
-  margin-top: 1rem;
   display: flex;
   width: 100%;
+  margin-top: 1rem;
+  padding: 1.625rem;
   border-radius: 9999px;
   background-color: variables.$cta-bg-color;
-  padding: 1.625rem;
 }
 
 @media (min-width: variables.$sm) {

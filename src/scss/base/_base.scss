@@ -4,16 +4,16 @@
 @use 'fonts';
 
 html {
-  font-family: variables.$sans-family;
+  font-family: 'Gilroy', variables.$sans-family;
   line-height: 1.5;
 }
 
 body {
-  cursor: default;
-  background-color: variables.$body-bg-color;
+  color: variables.$body-text-color;
   font-family: inherit;
   line-height: inherit;
-  color: variables.$body-text-color;
+  background-color: variables.$body-bg-color;
+  cursor: default;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -22,9 +22,9 @@ body {
 ::before,
 ::after {
   box-sizing: border-box;
-  border-width: 0;
-  border-style: solid;
   border-color: currentColor;
+  border-style: solid;
+  border-width: 0;
 }
 
 hr {
@@ -32,8 +32,8 @@ hr {
 }
 
 img {
-  user-select: none;
   border-style: solid;
+  user-select: none;
 }
 
 textarea {
@@ -61,8 +61,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: inherit;
   font-weight: inherit;
+  font-size: inherit;
 }
 
 a {
@@ -76,8 +76,8 @@ optgroup,
 select,
 textarea {
   padding: 0;
-  line-height: inherit;
   color: inherit;
+  line-height: inherit;
 }
 
 pre,

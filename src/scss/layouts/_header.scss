@@ -1,18 +1,19 @@
-@use '../abstracts/variables';
+@use '../abstracts/functions' as *;
+@use '../abstracts/variables' as *;
 
 .header {
-  user-select: none;
-  background-color: variables.$header-bg-color;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  background-color: $header-bg-color;
+  user-select: none;
 
   > .container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
 .header-logo {
-  width: 12.25rem;
+  width: to-rem(196);
 }

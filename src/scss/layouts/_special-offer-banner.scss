@@ -1,17 +1,17 @@
-@use '../abstracts/variables';
+@use '../abstracts/variables' as *;
 
 .special-offer-banner {
-  user-select: none;
-  background-color: variables.$so-bg-color;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+  background-color: $so-bg-color;
+  user-select: none;
 
   p {
-    text-align: center;
-    font-size: 0.875rem;
     font-weight: 700;
-    text-transform: uppercase;
+    font-size: 0.875rem;
     line-height: 1.25rem;
     letter-spacing: 0.025em;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
