@@ -1,0 +1,44 @@
+@font-face {
+  font-weight: 400;
+  font-family: 'Gilroy';
+  font-style: normal;
+  src: url('/fonts/Gilroy-Regular.woff2') format('woff2'),
+    url('/fonts/Gilroy-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: 'Gilroy';
+  font-style: normal;
+  src: url('/fonts/Gilroy-Medium.woff2') format('woff2'),
+    url('/fonts/Gilroy-Medium.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'Gilroy';
+  font-style: normal;
+  src: url('/fonts/Gilroy-Bold.woff2') format('woff2'),
+    url('/fonts/Gilroy-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'Gilroy';
+  font-style: italic;
+  src: url('/fonts/Gilroy-BoldItalic.woff2') format('woff2'),
+    url('/fonts/Gilroy-BoldItalic.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 900;
+  font-family: 'ArdelaEdgeX02';
+  font-style: normal;
+  src: url('/fonts/ArdelaEdgeX02-Black.woff2') format('woff2'),
+    url('/fonts/ArdelaEdgeX02-Black.woff') format('woff');
+  font-display: swap;
+}
