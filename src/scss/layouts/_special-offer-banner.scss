@@ -1,17 +1,7 @@
-@use '../abstracts/variables' as *;
-
 .special-offer-banner {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  background-color: $so-bg-color;
-  user-select: none;
+  @apply py-1 bg-primary select-none;
+}
 
-  p {
-    font-weight: 700;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    letter-spacing: 0.025em;
-    text-align: center;
-    text-transform: uppercase;
-  }
+.special-offer-text {
+  @apply font-bold text-sm tracking-wide text-center uppercase;
 }

@@ -1,0 +1,16 @@
+@use '../abstracts/functions' as *;
+@use '../abstracts/variables' as *;
+
+.product-overview-section {
+  background-image: radial-gradient(75.5% 75.5% at 26.79% 55.09%, #404040 0%, $black 100%);
+
+  @apply pt-24 pb-28;
+}
+
+.product-overview-grid {
+  @apply grid;
+
+  @screen md {
+    @apply grid-cols-2;
+  }
+}

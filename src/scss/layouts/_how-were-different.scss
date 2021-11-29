@@ -1,48 +1,33 @@
-@use 'sass:math';
-@use '../abstracts/variables';
-
 .how-different-section {
-  padding-top: 4rem;
-  padding-bottom: 6rem;
+  @apply pt-16 pb-24;
 }
 
 .how-different-description {
-  margin-top: 0.75rem;
+  @apply mt-3;
 }
 
 .how-different-grid {
-  display: grid;
-  gap: 2rem;
-  margin-top: 2.375rem;
+  @apply grid gap-8 mt-10;
 
-  img {
-    border-radius: 1rem;
+  @screen md {
+    img {
+      @apply w-8/12 mx-auto;
+    }
+  }
+
+  @screen lg {
+    @apply grid-cols-3;
+
+    img {
+      @apply w-auto;
+    }
   }
 
   h3 {
-    margin-top: 2.25rem;
+    @apply mt-9;
   }
 
   figcaption {
-    margin-top: 0.875rem;
-    color: variables.$gray;
-  }
-}
-
-@media (min-width: variables.$md) {
-  .how-different-grid img {
-    max-width: math.percentage(math.div(8, 12));
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-@media (min-width: variables.$lg) {
-  .how-different-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-
-    img {
-      max-width: 100%;
-    }
+    @apply mt-4 text-neutral;
   }
 }
