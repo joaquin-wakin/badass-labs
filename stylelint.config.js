@@ -14,7 +14,7 @@ module.exports = {
     'order/order': [...postcssSorting.order],
     'order/properties-alphabetical-order': null,
     'order/properties-order': [...postcssSorting.propertiesOrder],
-    'scss/at-rule-no-unknown': [true, { ignoreAtRules: [/^screen/] }],
+    'scss/at-rule-no-unknown': [true, { ignoreAtRules: [/^layer/, /^screen/] }],
     'string-quotes': 'single',
   },
 };
