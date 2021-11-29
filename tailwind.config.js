@@ -14,6 +14,9 @@ module.exports = {
         primary: '#b9db01',
         neutral: '#8d8d8d',
       },
+      backgroundImage: {
+        'about-us': "url('/images/about-bg-image.jpg')",
+      },
     },
   },
   variants: {
