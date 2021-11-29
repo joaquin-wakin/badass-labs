@@ -4,7 +4,6 @@ module.exports = {
     'dollar-variables',
     'declarations',
     {
-      // modifiers
       type: 'rule',
       selector: /^&--/,
     },
