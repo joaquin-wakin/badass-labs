@@ -1,108 +1,51 @@
-@use '../abstracts/variables';
-
 .footer {
-  padding-top: 4.25rem;
-  padding-bottom: 2.875rem;
-  color: variables.$footer-text-color;
-  background-image: url('/images/footer-bg-image.png'), linear-gradient(0deg, #000, #000);
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: cover;
-  user-select: none;
+  @apply pt-16 pb-10 text-white bg-footer bg-no-repeat bg-center bg-cover select-none;
+}
+
+.footer-headline {
+  @apply text-primary font-bold text-3xl tracking-tight text-center;
 }
 
 .footer-description {
-  max-width: 56rem;
-  margin-top: 0.75rem;
-  margin-right: auto;
-  margin-left: auto;
+  @apply max-w-4xl mt-3 mx-auto;
 }
 
 .footer-cta {
-  display: flex;
-  align-items: center;
-  margin-top: 3rem;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 1.25rem 2.25rem;
-  color: variables.$footer-cta-text;
-  border-radius: 9999px;
-  background-color: variables.$footer-cta-bg;
-  transition: box-shadow 300ms ease;
-
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 0 4px variables.$black, 0 0 0 6px rgba(variables.$primary, 0.5);
-  }
+  @apply flex items-center mt-12 mx-auto space-x-2 py-5 px-9 text-black rounded-full bg-primary;
 
   .cta-text {
-    font-weight: 700;
-    font-size: 1.5rem;
-    font-style: italic;
-    line-height: 1;
-    letter-spacing: -0.05em;
+    @apply font-bold text-2xl italic tracking-tighter;
   }
 
   .arrow-right-icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    background-image: svg-load('arrow-right-icon.svg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
-
-  > * + * {
-    margin-right: 0;
-    margin-left: 0.5rem;
+    @apply w-6 h-6 bg-arrow-icon bg-no-repeat bg-center bg-cover;
   }
 }
 
 .footer-logo {
-  width: 15rem;
-  margin-top: 2.5rem;
-  margin-right: auto;
-  margin-left: auto;
+  @apply w-60 mt-10 mx-auto;
 }
 
 .footer-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1.375rem;
+  @apply flex flex-col items-center mt-6 space-y-2;
 
-  > a {
-    text-decoration: underline;
-    text-underline-offset: 0.25em;
-  }
-
-  > a + a {
-    margin-top: 0.5rem;
-    margin-bottom: 0;
+  a {
+    @apply underline;
   }
 }
 
 .footer-copyright {
-  margin-top: 1rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  @apply mt-4 text-sm text-center;
 }
 
-@media (min-width: variables.$sm) {
+@screen sm {
   .footer-nav {
-    flex-direction: row;
-    justify-content: center;
-
-    > a + a {
-      margin-top: 0;
-      margin-right: 0;
-      margin-left: 1rem;
-    }
+    @apply flex-row justify-center space-x-4 space-y-0;
   }
 }
 
-@media (min-width: variables.$md) {
+@screen md {
   .footer-cta .cta-text {
-    font-size: 2.25rem;
+    @apply text-4xl;
   }
 }
