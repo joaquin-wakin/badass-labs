@@ -1,2 +1,14 @@
+@import 'tailwindcss/base';
+@import 'fonts';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@layer base {
+  body {
+    @apply cursor-default antialiased;
+  }
+
+  img {
+    @apply select-none;
+  }
+}
