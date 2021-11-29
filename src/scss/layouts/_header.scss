@@ -1,7 +1,7 @@
 .header {
   @apply py-2 bg-black select-none;
 
-  > .container {
+  .container {
     @apply flex justify-between items-center;
   }
 }
