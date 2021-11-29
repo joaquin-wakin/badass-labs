@@ -1,4 +1,5 @@
 const path = require('path');
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   mode: 'jit',
@@ -14,8 +15,14 @@ module.exports = {
         primary: '#b9db01',
         neutral: '#8d8d8d',
       },
+      fontFamily: {
+        sans: ['Gilroy', ...defaultTheme.fontFamily.sans],
+        'ardela-edge': ['ArdelaEdgeX02', ...defaultTheme.fontFamily.sans],
+      },
       backgroundImage: {
         'about-us': "url('/images/about-bg-image.jpg')",
+        footer: "url('/images/footer-bg-image.png'), linear-gradient(0deg, #000, #000)",
+        'arrow-icon': "svg-load('arrow-right-icon.svg')",
       },
     },
   },
