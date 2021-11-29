@@ -14,7 +14,7 @@
   <body>
     <div class="special-offer-banner">
       <div class="container">
-        <p>Special Halloween Offer &#8211; Free Delivery Over &#36;90</p>
+        <p class="special-offer-text">Special Halloween Offer &#8211; Free Delivery Over &#36;90</p>
       </div>
     </div>
 
@@ -36,14 +36,14 @@
       <section class="product-review-section">
         <div class="container">
           <h1 class="large-text text-center">
-            Waterless wash, unmatched shine, and graphene nano protection for months!
+            Waterless wash, unmatched shine, and
+            <br class="hidden lg:block" />
+            graphene nano protection for months!
           </h1>
 
           <div class="product-review-grid" role="grid">
             <div role="gridcell">
-              <div class="product-active-image">
-                <!-- <img src="/images/nano-shield-big.jpeg" alt="" /> -->
-              </div>
+              <div class="product-active-image"></div>
 
               <div class="product-image-gallery"></div>
             </div>
@@ -53,10 +53,10 @@
                 <div>
                   <div>
                     <!-- stars -->
-                    <div>1,390 Reviews</div>
+                    <span>1,390 Reviews</span>
                   </div>
 
-                  <p class="small-text product-review-feedback">
+                  <p class="product-review-feedback">
                     "I was extremely sceptical about buying car care products. I finally decided to
                     do my own research and found Nano Shield. I’ve never had more people ask me if I
                     got a new car when my car is actually 7 years old!!!" &#8211; Shane J.
@@ -149,7 +149,7 @@
 
           <div class="how-different-grid" role="grid">
             <figure role="gridcell">
-              <img src="/images/before-after.jpg" alt="Before and After Results" />
+              <img src="/images/before-after.jpg" alt="Before and After" class="rounded-2xl" />
               <h3 class="text-center medium-text">Easy-to-Use</h3>
               <figcaption class="text-center small-text">
                 Just spray, wipe and enjoy a car that looks brand new. Lorem Ipsum is simply dummy
@@ -162,7 +162,7 @@
             </figure>
 
             <figure role="gridcell">
-              <img src="/images/graphene.jpg" alt="Graphene Structure" />
+              <img src="/images/graphene.jpg" alt="Graphene Structure" class="rounded-2xl" />
               <h3 class="text-center medium-text">Last for Months</h3>
               <figcaption class="text-center small-text">
                 We've ordered all of the products out there, every single one of them. And you know
@@ -175,7 +175,7 @@
             </figure>
 
             <figure role="gridcell">
-              <img src="/images/car-layers.jpg" alt="Car Layers" />
+              <img src="/images/car-layers.jpg" alt="Car Layers" class="rounded-2xl" />
               <h3 class="text-center medium-text">Catches the Eyes</h3>
               <figcaption class="text-center small-text">
                 Our special 3 layer graphene nano formula. Lorem Ipsum is simply dummy text of the
@@ -190,7 +190,18 @@
       </section>
 
       <section class="product-overview-section">
-        <div class="container"></div>
+        <div class="container">
+          <div class="product-overview-grid">
+            <div>
+              <span class="sr-only">Nano Shield Packaging and Product</span>
+              <img src="/images/product-packaging-demo.png" alt="Nano Shield" />
+            </div>
+
+            <div>
+              <div></div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="product-pricing-section">
