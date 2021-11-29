@@ -12,6 +12,7 @@ module.exports = {
         return broadMatches.concat(innerMatches);
       },
     },
+    'postcss-import': {},
     'postcss-inline-svg': {
       paths: [path.join(__dirname, 'public/svg')],
       // removeFill: true,
@@ -23,5 +24,6 @@ module.exports = {
       'properties-order': [...postcssSorting.propertiesOrder],
       'unspecified-properties-position': 'bottom',
     },
+    tailwindcss: {},
   },
 };
