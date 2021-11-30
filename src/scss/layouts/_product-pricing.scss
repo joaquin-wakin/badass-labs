@@ -1,1 +1,57 @@
-// Pricing Table Section
+.product-pricing {
+  @apply pt-24 pb-32 bg-gray-200;
+}
+
+.pricing-card-grid {
+  @apply grid gap-6 items-center;
+
+  @screen sm {
+    @apply grid-cols-2;
+  }
+
+  @screen lg {
+    @apply grid-cols-4;
+  }
+}
+
+.pricing-card {
+  @apply relative pt-10 pb-4 px-4 rounded-2xl text-center bg-white shadow-pricing-card;
+}
+
+.pricing-card__best {
+  @apply absolute -top-5 inline-block py-2 px-5 font-bold font-ardela-edge rounded-full;
+}
+
+.best {
+  &--value {
+    @apply bg-primary;
+  }
+
+  &--seller {
+    @apply bg-red-500;
+  }
+}
+
+.pricing-card__name {
+  @apply font-bold text-2xl;
+}
+
+.pricing-card__image {
+  @apply mt-5;
+}
+
+.pricing-card__save {
+  @apply py-2 font-ardela-edge rounded-full bg-light-gray;
+}
+
+.pricing-card__note {
+  @apply mt-2 text-gray-500 text-xs uppercase;
+}
+
+.pricing-card__shipping {
+  @apply mt-2 font-bold;
+}
+
+.pricing-card__button {
+  @apply block w-full mt-3 p-3 font-ardela-edge rounded-xl bg-primary;
+}
