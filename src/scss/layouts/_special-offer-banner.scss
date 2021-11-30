@@ -1,7 +1,7 @@
-.special-offer-banner {
+.special-banner {
   @apply py-1 bg-primary select-none;
-}
 
-.special-offer-text {
-  @apply font-bold text-sm tracking-wide text-center uppercase;
+  &__text {
+    @apply font-bold text-sm tracking-wide text-center uppercase;
+  }
 }
