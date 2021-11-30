@@ -30,6 +30,8 @@
   @apply flex flex-col items-center mt-6 space-y-2;
 
   a {
+    text-underline-offset: 0.25em;
+
     @apply underline;
   }
 }
