@@ -4,8 +4,8 @@
   .container {
     @apply flex justify-between items-center;
   }
-}
 
-.header-logo {
-  @apply w-48;
+  &__logo {
+    @apply w-48;
+  }
 }
