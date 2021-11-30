@@ -7,8 +7,4 @@
   body {
     @apply cursor-default antialiased;
   }
-
-  img {
-    @apply select-none;
-  }
 }
