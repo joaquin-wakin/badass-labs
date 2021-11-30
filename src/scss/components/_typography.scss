@@ -1,5 +1,17 @@
 @use '../abstracts/variables';
 
+.headline {
+  @apply text-[1.75rem] leading-none font-bold italic tracking-tight uppercase;
+
+  @screen sm {
+    @apply text-[2rem];
+  }
+
+  @screen md {
+    @apply text-[2.5rem];
+  }
+}
+
 .heading-one {
   @apply text-2xl italic font-bold text-center uppercase;
 
