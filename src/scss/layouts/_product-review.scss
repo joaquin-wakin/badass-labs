@@ -2,11 +2,11 @@
 @use '../abstracts/functions' as *;
 @use '../abstracts/variables';
 
-.product-review-section {
+.product-review {
   @apply pt-10 pb-16;
 }
 
-.product-review-grid {
+.product-review__grid {
   @apply grid grid-cols-1 gap-12 mt-16;
 
   @screen lg {
@@ -14,62 +14,50 @@
   }
 }
 
-.product-feedback-row {
+.product-feedback {
   @apply flex flex-col -mx-4;
 
   > div {
     @apply px-4;
+  }
 
-    + div {
-      @apply mt-4;
-    }
+  > div + div {
+    @apply mt-4;
   }
 }
 
-.product-review-feedback {
+.star-solid {
+  @apply w-5 h-5 bg-star-solid;
+}
+
+.product-feedback__text {
   @apply mt-5 text-neutral text-xl font-bold;
 }
 
-.product-badge-icons {
+.product-feedback__icons {
   @apply flex flex-row items-center;
+
+  img {
+    @apply w-20;
+  }
 
   > img ~ img {
     @apply ml-4;
   }
 }
 
-.product-badge {
-  @apply w-20;
-}
-
 .product-detail-list {
   @apply mt-4 list-inside list-disc;
 }
 
-.product-review-cta {
-  @apply flex flex-col w-full mt-4 p-6 rounded-full bg-primary;
-}
-
 @media (min-width: variables.$sm) {
-  .product-feedback-row {
+  .product-feedback {
     flex-direction: row;
-
-    > div + div {
-      @apply my-0;
-    }
-
-    > div:nth-of-type(1) {
-      flex: 0 0 math.percentage(math.div(8, 12));
-    }
-
-    > div:nth-of-type(2) {
-      flex: 0 0 math.percentage(math.div(4, 12));
-    }
   }
 }
 
 @media (min-width: variables.$lg) {
-  .product-badge-icons {
+  .product-feedback__icons {
     flex-direction: column;
 
     > img ~ img {
