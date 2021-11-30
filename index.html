@@ -12,9 +12,11 @@
   </head>
 
   <body>
-    <div class="special-offer-banner">
+    <div class="special-banner">
       <div class="container">
-        <p class="special-offer-text">Special Halloween Offer &#8211; Free Delivery Over &#36;90</p>
+        <p class="special-banner__text">
+          Special Halloween Offer &#8211; Free Delivery Over &#36;90
+        </p>
       </div>
     </div>
 
@@ -22,26 +24,26 @@
       <div class="container">
         <div>
           <span class="sr-only">Bad Ass Labs</span>
-          <img src="/images/badass-labs-type.png" alt="Bad Ass Labs" class="header-logo" />
+          <img src="/images/badass-labs-type.png" alt="Bad Ass Labs" class="header__logo" />
         </div>
 
         <div>
           <span class="sr-only">Shopping Cart</span>
-          <!-- shopping-cart-icon -->
+          <div class="header__shopping-cart"></div>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="product-review-section">
+      <section class="product-review">
         <div class="container">
-          <h1 class="large-text text-center">
+          <h1 class="heading-one">
             Waterless wash, unmatched shine, and
             <br class="hidden lg:block" />
             graphene nano protection for months!
           </h1>
 
-          <div class="product-review-grid" role="grid">
+          <div class="product-review__grid" role="grid">
             <div role="gridcell">
               <div class="product-active-image"></div>
 
@@ -49,34 +51,30 @@
             </div>
 
             <div role="gridcell">
-              <div class="product-feedback-row">
-                <div>
-                  <div>
-                    <!-- stars -->
-                    <span>1,390 Reviews</span>
+              <div class="product-feedback sm:space-y-0" role="grid">
+                <div class="sm:w-8/12" role="gridcell">
+                  <div class="flex items-center">
+                    <div class="star-solid"></div>
+                    <div class="star-solid"></div>
+                    <div class="star-solid"></div>
+                    <div class="star-solid"></div>
+                    <div class="star-solid"></div>
+                    <div>1,390 Reviews</div>
                   </div>
 
-                  <p class="product-review-feedback">
+                  <p class="product-feedback__text">
                     "I was extremely sceptical about buying car care products. I finally decided to
                     do my own research and found Nano Shield. I’ve never had more people ask me if I
                     got a new car when my car is actually 7 years old!!!" &#8211; Shane J.
                   </p>
                 </div>
 
-                <div class="product-badge-icons">
+                <div class="product-feedback__icons sm:w-4/12" role="gridcell">
                   <span class="sr-only">Strong Durable Graphene</span>
-                  <img
-                    src="/images/strong-durable-graphene.png"
-                    alt="Strong Durable Graphene"
-                    class="product-badge"
-                  />
+                  <img src="/images/strong-durable-graphene.png" alt="Strong Durable Graphene" />
 
                   <span class="sr-only">Made in Europe</span>
-                  <img
-                    src="/images/made-in-europe.png"
-                    alt="Made in Europe"
-                    class="product-badge"
-                  />
+                  <img src="/images/made-in-europe.png" alt="Made in Europe" />
                 </div>
               </div>
 
@@ -87,18 +85,20 @@
                 <li>Professional Detailer Priced for Enthusiast</li>
               </ul>
 
-              <button class="product-review-cta">
-                <div>Buy Nano Shield Now</div>
-                <div>100&#37; No Risk &#8211; 30 Days Money Back Guarantee</div>
+              <button class="buy-now mt-4">
+                <div class="buy-now__text">Buy Nano Shield Now</div>
+                <div>Try it with 30&#8211;Day Money Back Guarantee</div>
               </button>
 
-              <div>
+              <div class="mt-7 text-red-500 text-center">
                 <div></div>
 
                 <div>Stock is Limited: 9,367&#43; sold out of 10,000 units available!</div>
               </div>
 
-              <div>100&#37; No Risk &#8211; 30 Days Money Back Guarantee</div>
+              <div class="mt-8 text-sm text-neutral text-center tracking-widest uppercase">
+                100&#37; No Risk &#8211; 30 Days Money Back Guarantee
+              </div>
 
               <div>
                 <!-- payment-options -->
@@ -108,19 +108,19 @@
         </div>
       </section>
 
-      <section class="about-us-section">
+      <section class="about-us">
         <div class="container">
           <div class="about-us-grid" role="grid">
             <div role="gridcell">
-              <img src="/images/car.jpeg" alt="Car" class="rounded-xl" />
+              <img src="/images/car.jpeg" alt="" class="rounded-xl" />
             </div>
 
             <div role="gridcell">
-              <h2 class="large-text">
+              <h2 class="large-text text-center lg:text-left">
                 Detailing has never been easier, catch all the looks after 10 mins application
               </h2>
 
-              <p class="small-text">
+              <p class="small-text text-center lg:text-left">
                 Our Badass Labs scientists developed the only Nano Protective Formula on the market.
                 A home detailing product that uses waterless nanotechnology enhanced with graphene
                 and other wetting agents to securely, safely, and ultimately protect your car from
@@ -140,10 +140,10 @@
         </div>
       </section>
 
-      <section class="how-different-section">
+      <section class="how-different">
         <div class="container">
           <h2 class="large-text text-center">How we are different</h2>
-          <p class="text-center small-text how-different-description">
+          <p class="small-text mt-3 text-center">
             Nano Shield has a groundbreaking formula that instantly makes your car stand out!
           </p>
 
@@ -189,7 +189,7 @@
         </div>
       </section>
 
-      <section class="product-overview-section">
+      <section class="product-overview">
         <div class="container">
           <div class="product-overview-grid">
             <div>
@@ -205,29 +205,7 @@
       </section>
 
       <section class="product-pricing-section">
-        <div class="container">
-          <div class="product-pricing-table" role="grid">
-            <div class="product-pricing-item" role="gridcell">
-              <h2 class="product-pricing-name">
-                1 Bottle
-                <br />
-                NanoShield 3x
-              </h2>
-
-              <!-- <img src="" alt="1 Bottle NanoShield 3x" /> -->
-
-              <div class="product-pricing-price">
-                <span>Reg &#36;22.95</span>
-                <span>&#36;62.85</span>
-                <span>/ each</span>
-              </div>
-
-              <div class="product-pricing-save">Save &#36;2</div>
-              <div>100&#37; No Risk &#8211; 30 Days Money Back Guarantee</div>
-              <button>Buy it now</button>
-            </div>
-          </div>
-        </div>
+        <div class="container"></div>
       </section>
     </main>
 
