@@ -23,8 +23,9 @@
 }
 
 .pricing-card__best {
+  transform: translateX(-50%);
+
   @apply absolute -top-5 left-1/2 inline-block py-2 px-5 font-bold font-ardela-edge rounded-full;
-  @apply -translate-x-1/2;
 }
 
 .best--value {
