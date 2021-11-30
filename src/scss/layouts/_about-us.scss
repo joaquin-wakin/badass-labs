@@ -2,7 +2,7 @@
 @use '../abstracts/functions' as *;
 @use '../abstracts/variables' as *;
 
-.about-us-section {
+.about-us {
   @apply pt-40 pb-20 text-white bg-about-us bg-center bg-cover;
 }
 
