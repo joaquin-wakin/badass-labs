@@ -1,7 +1,4 @@
 @use '../abstracts/variables';
-@use 'modern-normalize/modern-normalize';
-@use 'suitcss-base/lib/base';
-@use 'fonts';
 
 html {
   font-family: 'Gilroy', variables.$sans-family;
