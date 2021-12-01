@@ -3,7 +3,6 @@ const postcssSorting = require('./util/postcssSorting');
 module.exports = {
   customSyntax: 'postcss-scss',
   extends: ['stylelint-config-standard-scss'],
-
   plugins: ['stylelint-order', 'stylelint-scss'],
   rules: {
     'alpha-value-notation': 'number',
