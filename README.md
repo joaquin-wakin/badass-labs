@@ -1,5 +1,7 @@
 # Badass Labs &#8211; Nano Shield
 
+Waterless wash, unmatched shine, and graphene nano protection for months!
+
 ## Run Locally
 
 1. Download or clone the project
@@ -25,7 +27,5 @@
    ```sh
    yarn dev
    ```
-
----
 
 &#169; [Hyperzon](https://hyperzon.io) 2021
