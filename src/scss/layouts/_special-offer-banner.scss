@@ -1,7 +1,7 @@
 .special-banner {
-  @apply py-1 bg-primary select-none;
+  @apply py-1 bg-primary;
+}
 
-  &__text {
-    @apply font-bold text-sm tracking-wide text-center uppercase;
-  }
+.special-banner__text {
+  @apply font-bold text-sm tracking-wide text-center uppercase;
 }
