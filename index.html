@@ -53,13 +53,13 @@
             <div role="gridcell">
               <div class="product-feedback space-y-4 sm:space-y-0" role="grid">
                 <div class="sm:w-8/12" role="gridcell">
-                  <div class="flex items-center space-x-2">
+                  <div class="flex items-center">
                     <div class="star-solid"></div>
                     <div class="star-solid"></div>
                     <div class="star-solid"></div>
                     <div class="star-solid"></div>
                     <div class="star-solid"></div>
-                    <div class="text-neutral font-medium">1,390 Reviews</div>
+                    <div class="ml-2 text-neutral font-medium">1,390 Reviews</div>
                   </div>
 
                   <p class="product-feedback__text">
@@ -116,18 +116,23 @@
                 <div>Try it with 30&#8211;Day Money Back Guarantee</div>
               </button>
 
-              <div class="mt-7 text-red-500 text-center">
-                <div></div>
-
-                <div>Stock is Limited: 9,367&#43; sold out of 10,000 units available!</div>
+              <div class="limited-stocks">
+                <div class="shopping-cart-icon"></div>
+                <div class="limited-stocks__text">
+                  Stock is Limited: 9,367&#43; sold out of 10,000 units available!
+                </div>
               </div>
 
-              <div class="mt-8 text-sm text-neutral text-center tracking-widest uppercase">
-                100&#37; No Risk &#8211; 30 Days Money Back Guarantee
-              </div>
+              <p class="money-guarantee">100&#37; No Risk &#8211; 30 Days Money Back Guarantee</p>
 
-              <div>
-                <!-- payment-options -->
+              <div class="payment-options">
+                <div class="payment-options__text">We accept payments with:</div>
+                <div class="payment-options__item paypal"></div>
+                <div class="payment-options__item visa"></div>
+                <div class="payment-options__item mastercard"></div>
+                <div class="payment-options__item mcafee-secure"></div>
+                <div class="payment-options__item secure-encryption"></div>
+                <div class="payment-options__item norton-secured"></div>
               </div>
             </div>
           </div>
@@ -216,14 +221,69 @@
 
       <section class="product-overview">
         <div class="container">
-          <div class="product-overview-grid">
-            <div>
+          <div class="product-overview-grid" role="grid">
+            <div role="gridcell">
               <span class="sr-only">Nano Shield Packaging and Product</span>
               <img src="/images/product-packaging-demo.png" alt="Nano Shield" />
             </div>
 
-            <div>
-              <div></div>
+            <div role="gridcell">
+              <div class="product-info" role="grid">
+                <figure class="product-info__item" role="gridcell">
+                  <img
+                    src="/images/three-layers-formula.png"
+                    alt="Advanced 3 Layers Protection Formula"
+                    class="product-info__image"
+                  />
+
+                  <p class="product-info__text">Advanced 3 Layers Protection Formula</p>
+                </figure>
+
+                <figure class="product-info__item" role="gridcell">
+                  <img
+                    src="/images/long-lasting-durability.png"
+                    alt="Long Lasting Durability"
+                    class="product-info__image"
+                  />
+
+                  <p class="product-info__text">Long Lasting Durability</p>
+                </figure>
+
+                <figure class="product-info__item" role="gridcell">
+                  <img
+                    src="/images/easy-to-apply.png"
+                    alt="Easy-to-Apply"
+                    class="product-info__image"
+                  />
+
+                  <p class="product-info__text">Easy-to-Apply</p>
+                </figure>
+
+                <figure class="product-info__item" role="gridcell">
+                  <img
+                    src="/images/wash-shine-coat.png"
+                    alt="Wash, Shine, & Coat"
+                    class="product-info__image"
+                  />
+
+                  <p class="product-info__text">Wash, Shine, & Coat</p>
+                </figure>
+
+                <figure class="product-info__item" role="gridcell">
+                  <img
+                    src="/images/approved-for-all.png"
+                    alt="Approved for All Car Surfaces"
+                    class="product-info__image"
+                  />
+
+                  <p class="product-info__text">Approved for All Car Surfaces</p>
+                </figure>
+
+                <figure class="product-info__item" role="gridcell">
+                  <img src="/images/made-in-eu.png" alt="Made in EU" class="product-info__image" />
+                  <p class="product-info__text">Made in EU</p>
+                </figure>
+              </div>
             </div>
           </div>
         </div>
