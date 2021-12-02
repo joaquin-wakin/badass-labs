@@ -4,11 +4,11 @@
 
 .product-overview-grid,
 .product-info {
-  @apply grid gap-4;
+  @apply grid;
 }
 
 .product-overview-grid {
-  @apply items-center;
+  @apply gap-4 items-center;
 }
 
 .product-info__item {
@@ -16,21 +16,37 @@
 }
 
 .product-info__image {
-  @apply w-20 h-20;
+  @apply w-20;
 }
 
 .product-info__text {
-  @apply ml-4 font-bold text-2xl tracking-tight;
+  @apply flex-grow ml-4 font-bold text-xl tracking-tight;
 }
 
-@screen md {
+@screen sm {
   .product-info {
     @apply grid-cols-2;
   }
 }
 
+@screen md {
+  .product-info__text {
+    @apply text-2xl;
+  }
+}
+
 @screen lg {
   .product-overview-grid {
+    @apply grid-cols-2;
+  }
+
+  .product-info {
+    @apply grid-cols-1;
+  }
+}
+
+@screen xl {
+  .product-info {
     @apply grid-cols-2;
   }
 }
