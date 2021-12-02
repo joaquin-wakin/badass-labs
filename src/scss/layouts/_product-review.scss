@@ -14,10 +14,6 @@
   }
 }
 
-.star-solid {
-  @apply w-6 h-6 bg-star-solid;
-}
-
 .product-feedback__text {
   @apply mt-5 text-neutral text-xl font-bold;
 }
@@ -36,6 +32,10 @@
 
 .product-details__item {
   @apply flex items-center space-x-4;
+
+  > :not([hidden]) ~ :not([hidden]) {
+    @apply flex-grow;
+  }
 }
 
 .limited-stocks {
