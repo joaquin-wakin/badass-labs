@@ -1,23 +1,15 @@
-@use 'sass:math';
-@use '../abstracts/functions' as *;
-@use '../abstracts/variables';
-
 .product-review {
-  @apply pt-10 pb-16;
+  @apply pt-9 pb-16;
 }
 
 .product-review__grid {
   @apply grid grid-cols-1 gap-12 mt-16;
-
-  @screen lg {
-    @apply grid-cols-2;
-  }
 }
 
 .product-feedback {
   @apply flex flex-col -mx-4;
 
-  > div {
+  > :not([hidden]) {
     @apply px-4;
   }
 }
@@ -46,8 +38,24 @@
   @apply flex items-center space-x-4;
 }
 
-.check-icon {
-  @apply w-7 h-7 bg-check-icon;
+.limited-stocks {
+  @apply flex items-center justify-center mt-6 space-x-2;
+}
+
+.limited-stocks__text {
+  @apply text-red-500 font-medium;
+}
+
+.money-guarantee {
+  @apply mt-6 text-neutral text-sm tracking-widest text-center uppercase;
+}
+
+.payment-options {
+  @apply flex items-center mt-4;
+}
+
+.payment-options__text {
+  @apply text-neutral text-sm;
 }
 
 @screen sm {
@@ -57,6 +65,10 @@
 }
 
 @screen lg {
+  .product-review__grid {
+    @apply grid-cols-2;
+  }
+
   .product-feedback__icons {
     @apply flex-col;
   }
