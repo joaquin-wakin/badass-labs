@@ -1,3 +1,11 @@
+.check-icon {
+  @apply w-7 h-7 bg-check-icon;
+}
+
 .arrow-right-icon {
   @apply w-6 h-6 bg-arrow-icon bg-no-repeat bg-center bg-cover;
+}
+
+.shopping-cart-icon {
+  @apply w-6 h-6 bg-shopping-cart-icon bg-no-repeat bg-center bg-cover;
 }
