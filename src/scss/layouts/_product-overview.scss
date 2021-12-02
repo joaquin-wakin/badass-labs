@@ -1,16 +1,36 @@
-@use '../abstracts/functions' as *;
-@use '../abstracts/variables' as *;
-
 .product-overview {
-  background-image: radial-gradient(75.5% 75.5% at 26.79% 55.09%, #404040 0%, $black 100%);
+  @apply pt-24 pb-28 text-white bg-product-overview;
+}
 
-  @apply pt-24 pb-28;
+.product-overview-grid,
+.product-info {
+  @apply grid gap-4;
 }
 
 .product-overview-grid {
-  @apply grid;
+  @apply items-center;
+}
 
-  @screen md {
+.product-info__item {
+  @apply flex items-center;
+}
+
+.product-info__image {
+  @apply w-20 h-20;
+}
+
+.product-info__text {
+  @apply ml-4 font-bold text-2xl tracking-tight;
+}
+
+@screen md {
+  .product-info {
+    @apply grid-cols-2;
+  }
+}
+
+@screen lg {
+  .product-overview-grid {
     @apply grid-cols-2;
   }
 }
