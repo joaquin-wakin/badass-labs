@@ -1,64 +1,43 @@
-@use 'sass:math';
-@use '../abstracts/functions' as *;
-@use '../abstracts/variables' as *;
-
 .about-us {
   @apply pt-40 pb-20 text-white bg-about-us bg-center bg-cover;
 }
 
 .about-us-grid {
   @apply grid gap-12 items-center;
+}
 
-  h2 {
-    @apply text-primary;
-  }
+.about-us__image {
+  @apply mx-auto rounded-xl;
+}
 
-  p {
-    @apply mt-6;
+.about-us__headline {
+  @apply text-primary text-center;
+}
+
+.about-us__description {
+  @apply mt-6 text-center;
+}
+
+@screen md {
+  .about-us__image {
+    @apply w-8/12;
   }
 }
 
-.cta {
-  display: flex;
-  align-items: center;
-  margin-top: px-to-rem(76);
-  margin-right: auto;
-  margin-left: auto;
-  padding: px-to-rem(20) px-to-rem(30);
-  color: $black;
-  border-radius: 9999px;
-  background-color: $primary;
-
-  &:hover {
-    background-color: shade($primary, 20%);
-  }
-
-  &:focus {
-    outline: 0;
-    box-shadow: 0 0 0 2px $black, 0 0 0 4px shade($primary, 50%);
-  }
-
-  > div + div {
-    margin-left: px-to-rem(8);
-  }
-}
-
-@media (min-width: $md) {
+@screen lg {
   .about-us-grid {
-    img {
-      max-width: math.percentage(math.div(8, 12));
-      margin-right: auto;
-      margin-left: auto;
-    }
+    @apply grid-cols-2;
   }
-}
 
-@media (min-width: $lg) {
-  .about-us-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .about-us__image {
+    @apply w-full;
+  }
 
-    img {
-      max-width: 100%;
-    }
+  .about-us__headline {
+    @apply text-left;
+  }
+
+  .about-us__description {
+    @apply text-left;
   }
 }
