@@ -1,11 +1,15 @@
 .header {
-  @apply py-2 bg-black select-none;
+  @apply py-2 bg-black;
 
-  .container {
+  > .container {
     @apply flex justify-between items-center;
   }
+}
 
-  &__logo {
-    @apply w-48;
-  }
+.header__logo {
+  @apply w-48;
+}
+
+.header__shopping-cart {
+  @apply w-12 h-12;
 }
