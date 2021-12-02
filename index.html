@@ -51,15 +51,15 @@
             </div>
 
             <div role="gridcell">
-              <div class="product-feedback sm:space-y-0" role="grid">
+              <div class="product-feedback space-y-4 sm:space-y-0" role="grid">
                 <div class="sm:w-8/12" role="gridcell">
-                  <div class="flex items-center">
+                  <div class="flex items-center space-x-2">
                     <div class="star-solid"></div>
                     <div class="star-solid"></div>
                     <div class="star-solid"></div>
                     <div class="star-solid"></div>
                     <div class="star-solid"></div>
-                    <div>1,390 Reviews</div>
+                    <div class="text-neutral font-medium">1,390 Reviews</div>
                   </div>
 
                   <p class="product-feedback__text">
@@ -69,24 +69,50 @@
                   </p>
                 </div>
 
-                <div class="product-feedback__icons sm:w-4/12" role="gridcell">
-                  <span class="sr-only">Strong Durable Graphene</span>
-                  <img src="/images/strong-durable-graphene.png" alt="Strong Durable Graphene" />
+                <div
+                  class="product-feedback__icons space-x-4 sm:w-4/12 lg:space-x-0 lg:space-y-4"
+                  role="gridcell"
+                >
+                  <div>
+                    <span class="sr-only">Strong Durable Graphene</span>
+                    <img src="/images/strong-durable-graphene.png" alt="Strong Durable Graphene" />
+                  </div>
 
-                  <span class="sr-only">Made in Europe</span>
-                  <img src="/images/made-in-europe.png" alt="Made in Europe" />
+                  <div>
+                    <span class="sr-only">Made in Europe</span>
+                    <img src="/images/made-in-europe.png" alt="Made in Europe" />
+                  </div>
                 </div>
               </div>
 
-              <ul class="product-detail-list">
-                <li>EU Lab-Engineered</li>
-                <li>Innovative Graphene Nano Technology</li>
-                <li>Easy-to-Use</li>
-                <li>Professional Detailer Priced for Enthusiast</li>
+              <ul class="product-details">
+                <li class="product-details__item">
+                  <div class="check-icon"></div>
+                  <div>EU Lab-Engineered</div>
+                </li>
+
+                <li class="product-details__item">
+                  <div class="check-icon"></div>
+                  <div>Innovative Graphene Nano Technology</div>
+                </li>
+
+                <li class="product-details__item">
+                  <div class="check-icon"></div>
+                  <div>Easy-to-Use</div>
+                </li>
+
+                <li class="product-details__item">
+                  <div class="check-icon"></div>
+                  <div>Professional Detailer Priced for Enthusiast</div>
+                </li>
               </ul>
 
-              <button class="buy-now mt-4">
-                <div class="buy-now__text">Buy Nano Shield Now</div>
+              <button class="buy-now w-full mt-4">
+                <div class="buy-now__text flex items-center space-x-2">
+                  <span>Buy Nano Shield Now</span>
+                  <div class="arrow-right-icon"></div>
+                </div>
+
                 <div>Try it with 30&#8211;Day Money Back Guarantee</div>
               </button>
 
@@ -130,11 +156,10 @@
             </div>
           </div>
 
-          <button class="cta">
-            <div>Buy Nano Shield Now</div>
-            <div>
-              <span class="sr-only">Arrow right icon</span>
-              <!-- insert the icon here -->
+          <button class="buy-now mt-16 mx-auto">
+            <div class="buy-now__text flex items-center space-x-2">
+              <div>Buy Nano Shield Now</div>
+              <div class="arrow-right-icon"></div>
             </div>
           </button>
         </div>
