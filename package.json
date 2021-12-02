@@ -5,14 +5,13 @@
     "build": "vite build",
     "serve": "vite preview",
     "lint": "eslint .",
-    "style": "prettier --write .",
-    "stylelint": "stylelint --fix 'src/**/*.scss'"
+    "lint:styles": "stylelint --fix 'src/**/*.{css,scss}'",
+    "style": "prettier --write ."
   },
   "browserslist": [
     "> 0.5%"
   ],
   "dependencies": {
-    "@splidejs/splide": "^3.6.6",
     "autoprefixer": "^10.4.0",
     "tailwindcss": "^2.2.19",
     "vite": "^2.6.14"
