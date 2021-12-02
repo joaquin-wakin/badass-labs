@@ -1,12 +1,12 @@
 .buy-now {
-  @apply flex flex-col items-center justify-center w-full;
-  @apply p-4 rounded-full bg-primary shadow-buy-now select-none;
+  @apply flex flex-col items-center justify-center;
+  @apply py-4 px-8 rounded-full bg-primary shadow-buy-now select-none;
 }
 
 .buy-now__text {
-  @apply font-bold text-3xl italic tracking-tighter md:text-4xl;
+  @apply text-black font-bold text-3xl italic tracking-tighter md:text-4xl;
 
-  ~ * {
-    @apply pt-1 text-sm tracking-widest uppercase;
+  ~ :not([hidden]) {
+    @apply mt-1 text-sm tracking-widest uppercase;
   }
 }
