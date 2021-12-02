@@ -1,6 +1,6 @@
 .buy-now {
   @apply flex flex-col items-center justify-center;
-  @apply py-4 px-8 rounded-full bg-primary shadow-buy-now select-none;
+  @apply py-[1em] px-[2em] rounded-full bg-primary shadow-buy-now;
 }
 
 .buy-now__text {
