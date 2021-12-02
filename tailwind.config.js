@@ -22,6 +22,7 @@ module.exports = {
       },
       backgroundImage: {
         'star-solid': "svg-load('star-solid.svg')",
+        'check-icon': "svg-load('check-icon.svg')",
         'about-us': "url('/images/about-bg-image.jpg')",
         footer: "url('/images/footer-bg-image.png'), linear-gradient(0deg, #000, #000)",
         'arrow-icon': "svg-load('arrow-right-icon.svg')",
