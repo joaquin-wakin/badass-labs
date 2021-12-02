@@ -15,8 +15,6 @@ module.exports = {
     'postcss-import': {},
     'postcss-inline-svg': {
       paths: [path.join(__dirname, 'public/svg')],
-      // removeFill: true,
-      // removeStroke: true,
     },
     'postcss-sort-media-queries': {},
     'postcss-sorting': {
