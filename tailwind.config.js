@@ -23,9 +23,11 @@ module.exports = {
       backgroundImage: {
         'star-solid': "svg-load('star-solid.svg')",
         'check-icon': "svg-load('check-icon.svg')",
-        'about-us': "url('/images/about-bg-image.jpg')",
-        footer: "url('/images/footer-bg-image.png'), linear-gradient(0deg, #000, #000)",
         'arrow-icon': "svg-load('arrow-right-icon.svg')",
+        'shopping-cart-icon': "svg-load('shopping-cart-icon.svg')",
+        'about-us': "url('/images/about-bg-image.jpg')",
+        'product-overview': 'radial-gradient(75.5% 75.5% at 26.79% 55.09%, #404040 0%, #000 100%)',
+        footer: "url('/images/footer-bg-image.png'), linear-gradient(0deg, #000, #000)",
       },
       boxShadow: {
         'buy-now': '0 0 8px rgba(165, 165, 165, 0.5)',
