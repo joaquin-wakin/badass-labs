@@ -1,8 +1,8 @@
 .header {
-  @apply py-2 bg-black;
+  @apply pb-2 bg-black;
 
   > .container {
-    @apply flex justify-between items-center;
+    @apply pt-2 flex justify-between items-center;
   }
 }
 
