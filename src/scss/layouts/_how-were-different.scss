@@ -5,16 +5,8 @@
 }
 
 .how-different-grid {
-  > div {
+  > div[role='row'] {
     @apply grid gap-8 mt-10;
-  }
-
-  h3 {
-    @apply mt-8;
-  }
-
-  figcaption {
-    @apply mt-4 text-neutral;
   }
 }
 
@@ -27,6 +19,14 @@
   @apply text-center;
 }
 
+.figure-card__heading {
+  @apply mt-8;
+}
+
+.figure-card__caption {
+  @apply mt-4 text-neutral;
+}
+
 @screen md {
   .figure-card__image {
     @apply w-8/12 mx-auto;
@@ -35,7 +35,7 @@
 
 @screen lg {
   .how-different-grid {
-    > div {
+    > div[role='row'] {
       @apply grid-cols-3;
     }
   }

@@ -4,13 +4,13 @@
 
 .product-overview-grid,
 .product-info {
-  > div {
+  > div[role='row'] {
     @apply grid;
   }
 }
 
 .product-overview-grid {
-  > div {
+  > div[role='row'] {
     @apply gap-4 items-center;
   }
 }
@@ -29,7 +29,7 @@
 
 @screen sm {
   .product-info {
-    > div {
+    > div[role='row'] {
       @apply grid-cols-2;
     }
   }
@@ -43,13 +43,13 @@
 
 @screen lg {
   .product-overview-grid {
-    > div {
+    > div[role='row'] {
       @apply grid-cols-2;
     }
   }
 
   .product-info {
-    > div {
+    > div[role='row'] {
       @apply grid-cols-1;
     }
   }
@@ -57,7 +57,7 @@
 
 @screen xl {
   .product-info {
-    > div {
+    > div[role='row'] {
       @apply grid-cols-2;
     }
   }

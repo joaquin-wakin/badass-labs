@@ -3,7 +3,7 @@
 }
 
 .product-review__grid {
-  > div {
+  > div[role='row'] {
     @apply grid grid-cols-1 gap-12 mt-16;
   }
 }
@@ -78,7 +78,7 @@
 
 @screen lg {
   .product-review__grid {
-    > div {
+    > div[role='row'] {
       @apply grid-cols-2;
     }
   }

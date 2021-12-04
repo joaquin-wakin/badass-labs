@@ -3,7 +3,7 @@
 }
 
 .about-us-grid {
-  > div {
+  > div[role='row'] {
     @apply grid gap-12 items-center;
   }
 }
@@ -28,7 +28,7 @@
 
 @screen lg {
   .about-us-grid {
-    > div {
+    > div[role='row'] {
       @apply grid-cols-2;
     }
   }
