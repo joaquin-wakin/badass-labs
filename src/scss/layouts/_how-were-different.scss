@@ -1,29 +1,46 @@
+@use '../components/typography';
+
 .how-different {
   @apply pt-16 pb-24;
 }
 
 .how-different-grid {
-  @apply grid gap-8 mt-10;
-
-  @screen md {
-    img {
-      @apply w-8/12 mx-auto;
-    }
-  }
-
-  @screen lg {
-    @apply grid-cols-3;
-
-    img {
-      @apply w-auto;
-    }
+  > div {
+    @apply grid gap-8 mt-10;
   }
 
   h3 {
-    @apply mt-9;
+    @apply mt-8;
   }
 
   figcaption {
     @apply mt-4 text-neutral;
+  }
+}
+
+.figure-card__image {
+  @apply rounded-2xl;
+}
+
+.figure-card__heading,
+.figure-card__caption {
+  @apply text-center;
+}
+
+@screen md {
+  .figure-card__image {
+    @apply w-8/12 mx-auto;
+  }
+}
+
+@screen lg {
+  .how-different-grid {
+    > div {
+      @apply grid-cols-3;
+    }
+  }
+
+  .figure-card__image {
+    @apply w-auto;
   }
 }

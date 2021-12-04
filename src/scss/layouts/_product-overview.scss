@@ -4,11 +4,15 @@
 
 .product-overview-grid,
 .product-info {
-  @apply grid;
+  > div {
+    @apply grid;
+  }
 }
 
 .product-overview-grid {
-  @apply gap-4 items-center;
+  > div {
+    @apply gap-4 items-center;
+  }
 }
 
 .product-info__item {
@@ -25,7 +29,9 @@
 
 @screen sm {
   .product-info {
-    @apply grid-cols-2;
+    > div {
+      @apply grid-cols-2;
+    }
   }
 }
 
@@ -37,16 +43,22 @@
 
 @screen lg {
   .product-overview-grid {
-    @apply grid-cols-2;
+    > div {
+      @apply grid-cols-2;
+    }
   }
 
   .product-info {
-    @apply grid-cols-1;
+    > div {
+      @apply grid-cols-1;
+    }
   }
 }
 
 @screen xl {
   .product-info {
-    @apply grid-cols-2;
+    > div {
+      @apply grid-cols-2;
+    }
   }
 }

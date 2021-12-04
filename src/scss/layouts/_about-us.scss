@@ -3,7 +3,9 @@
 }
 
 .about-us-grid {
-  @apply grid gap-12 items-center;
+  > div {
+    @apply grid gap-12 items-center;
+  }
 }
 
 .about-us__image {
@@ -26,7 +28,9 @@
 
 @screen lg {
   .about-us-grid {
-    @apply grid-cols-2;
+    > div {
+      @apply grid-cols-2;
+    }
   }
 
   .about-us__image {
