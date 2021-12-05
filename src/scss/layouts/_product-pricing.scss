@@ -1,9 +1,9 @@
 .product-pricing {
-  @apply pt-24 pb-32 bg-gray-200;
+  @apply pt-24 pb-32 bg-light-gray;
 }
 
 .pricing-card-grid {
-  > div[role='row'] {
+  > div {
     @apply grid gap-6 items-center;
   }
 }
@@ -59,7 +59,7 @@
 
 @screen sm {
   .pricing-card-grid {
-    > div[role='row'] {
+    > div {
       @apply grid-cols-2;
     }
   }
@@ -67,7 +67,7 @@
 
 @screen xl {
   .pricing-card-grid {
-    > div[role='row'] {
+    > div {
       @apply grid-cols-4;
     }
   }

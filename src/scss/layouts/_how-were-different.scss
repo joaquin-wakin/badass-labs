@@ -1,11 +1,9 @@
-@use '../components/typography';
-
 .how-different {
   @apply pt-16 pb-24;
 }
 
 .how-different-grid {
-  > div[role='row'] {
+  > div {
     @apply grid gap-8 mt-10;
   }
 }
@@ -35,7 +33,7 @@
 
 @screen lg {
   .how-different-grid {
-    > div[role='row'] {
+    > div {
       @apply grid-cols-3;
     }
   }
