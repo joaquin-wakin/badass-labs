@@ -4,6 +4,6 @@
 
 @layer base {
   body {
-    @apply cursor-default antialiased;
+    @apply text-gray-900 cursor-default antialiased;
   }
 }
