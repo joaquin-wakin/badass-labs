@@ -1,7 +1,7 @@
 .header {
   @apply pb-2 bg-black;
 
-  > .container {
+  > .container > div {
     @apply pt-2 flex justify-between items-center;
   }
 }
