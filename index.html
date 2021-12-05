@@ -21,15 +21,17 @@
         </div>
       </div>
 
-      <div class="container">
-        <div>
-          <span class="sr-only">Bad Ass Labs</span>
-          <img src="/images/badass-labs-type.png" alt="Bad Ass Labs" class="header__logo" />
-        </div>
+      <div class="container" role="grid">
+        <div role="row">
+          <div role="gridcell">
+            <span class="sr-only">Bad Ass Labs</span>
+            <img src="/images/badass-labs-type.png" alt="Bad Ass Labs" class="header__logo" />
+          </div>
 
-        <div>
-          <span class="sr-only">Shopping Cart</span>
-          <div class="header__shopping-cart"></div>
+          <div role="gridcell">
+            <span class="sr-only">Shopping Cart</span>
+            <div class="header__shopping-cart"></div>
+          </div>
         </div>
       </div>
     </header>
@@ -46,8 +48,41 @@
           <div class="product-review__grid" role="grid">
             <div role="row">
               <div role="gridcell">
-                <div class="product-active-image"></div>
-                <div class="product-image-gallery"></div>
+                <div class="product-image">
+                  <img src="/images/active-product-image.png" alt="Nano Shield" />
+                </div>
+
+                <div class="product-gallery">
+                  <button class="product-gallery__arrow left-icon">
+                    <span class="sr-only">Left Arrow</span>
+                    <div class="left-arrow"></div>
+                  </button>
+
+                  <button class="product-gallery__item">
+                    <img src="/images/product-image-1.jpg" alt="Product Image 1" />
+                  </button>
+
+                  <button class="product-gallery__item">
+                    <img src="/images/product-image-2.jpg" alt="Product Image 2" />
+                  </button>
+
+                  <button class="product-gallery__item">
+                    <img src="/images/product-image-3.jpg" alt="Product Image 3" />
+                  </button>
+
+                  <button class="product-gallery__item">
+                    <img src="/images/product-image-4.jpg" alt="Product Image 4" />
+                  </button>
+
+                  <button class="product-gallery__item">
+                    <img src="/images/product-image-5.jpg" alt="Product Image 5" />
+                  </button>
+
+                  <button class="product-gallery__arrow right-icon">
+                    <span class="sr-only">Right Arrow</span>
+                    <div class="right-arrow"></div>
+                  </button>
+                </div>
               </div>
 
               <div role="gridcell">
