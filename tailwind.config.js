@@ -1,5 +1,6 @@
 const path = require('path');
 const defaultTheme = require('tailwindcss/defaultTheme');
+const plugin = require('tailwindcss/plugin');
 
 module.exports = {
   mode: 'jit',
@@ -38,5 +39,15 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    plugin(({ addUtilities }) => {
+      const newUtilities = {
+        '.underline-offset': {
+          textUnderlineOffset: '0.25em',
+        },
+      };
+
+      addUtilities(newUtilities);
+    }),
+  ],
 };
