@@ -22,6 +22,9 @@ module.exports = {
         'ardela-edge': ['ArdelaEdgeX02', ...defaultTheme.fontFamily.sans],
       },
       backgroundImage: {
+        'active-product': 'radial-gradient(75.5% 75.5% at 50% 50%, #404040 0%, #000 100%)',
+        'left-arrow': "svg-load('gallery-left-icon.svg')",
+        'right-arrow': "svg-load('gallery-right-icon.svg')",
         'star-solid': "svg-load('star-solid.svg')",
         'check-icon': "svg-load('check-icon.svg')",
         'arrow-icon': "svg-load('arrow-right-icon.svg')",
@@ -31,6 +34,7 @@ module.exports = {
         footer: "url('/images/footer-bg-image.png'), linear-gradient(0deg, #000, #000)",
       },
       boxShadow: {
+        'gallery-arrow': '0 0 8px rgba(165, 165, 165, 0.5)',
         'buy-now': '0 0 8px rgba(165, 165, 165, 0.5)',
         'pricing-card': '0 0 12px rgba(115, 115, 115, 0.5)',
       },
