@@ -23,8 +23,6 @@ module.exports = {
       },
       backgroundImage: {
         'active-product': 'radial-gradient(75.5% 75.5% at 50% 50%, #404040 0%, #000 100%)',
-        'left-arrow': "svg-load('gallery-left-icon.svg')",
-        'right-arrow': "svg-load('gallery-right-icon.svg')",
         'star-solid': "svg-load('star-solid.svg')",
         'check-icon': "svg-load('check-icon.svg')",
         'arrow-icon': "svg-load('arrow-right-icon.svg')",
