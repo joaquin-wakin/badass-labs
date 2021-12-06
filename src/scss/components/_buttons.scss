@@ -1,12 +1,22 @@
 .buy-now {
-  @apply flex flex-col items-center justify-center;
-  @apply py-[1em] px-[2em] rounded-full bg-primary shadow-buy-now;
+  @apply flex flex-col justify-center items-center;
+  @apply py-[1em] px-[1.5em] rounded-full bg-primary shadow-buy-now;
 }
 
 .buy-now__text {
-  @apply text-black font-bold text-3xl italic tracking-tighter md:text-4xl;
+  @apply text-black font-bold text-2xl italic tracking-tight;
 
   ~ :not([hidden]) {
-    @apply mt-1 text-sm tracking-widest uppercase;
+    @apply mt-1 text-xs tracking-wide uppercase;
+  }
+}
+
+@screen md {
+  .buy-now__text {
+    @apply text-4xl tracking-tighter;
+
+    ~ :not([hidden]) {
+      @apply text-sm tracking-widest;
+    }
   }
 }
