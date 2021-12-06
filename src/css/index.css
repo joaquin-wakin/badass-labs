@@ -1,4 +1,5 @@
 @import 'swiper/css/bundle';
+@import 'swiper';
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
@@ -6,5 +7,10 @@
 @layer base {
   body {
     @apply text-gray-900 cursor-default antialiased;
+  }
+
+  button,
+  img {
+    @apply select-none;
   }
 }
