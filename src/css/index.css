@@ -8,9 +8,4 @@
   body {
     @apply text-gray-900 cursor-default antialiased;
   }
-
-  button,
-  img {
-    @apply select-none;
-  }
 }
