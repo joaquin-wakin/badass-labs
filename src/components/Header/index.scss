@@ -1,0 +1,41 @@
+@use 'variables';
+
+.header {
+  user-select: none;
+}
+
+.header-banner {
+  padding-top: variables.$banner-padding-y;
+  padding-bottom: variables.$banner-padding-y;
+  background-color: variables.$banner-bg-color;
+}
+
+.header-banner-text {
+  font-weight: variables.$banner-font-weight;
+  font-size: variables.$banner-font-size;
+  line-height: variables.$banner-line-height;
+  letter-spacing: variables.$banner-letter-spacing;
+  text-align: variables.$banner-text-align;
+  text-transform: variables.$banner-text-transform;
+}
+
+.header-nav {
+  padding-top: variables.$nav-padding-y;
+  padding-bottom: variables.$nav-padding-y;
+  background-color: variables.$nav-bg-color;
+
+  > .container > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header-nav-logo {
+  width: variables.$nav-logo-width;
+}
+
+.header-button {
+  width: 1.5rem;
+  height: 1.5rem;
+}
