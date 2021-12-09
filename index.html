@@ -13,30 +13,29 @@
 
   <body>
     <header class="header">
-      <div class="special-offer">
+      <div class="header-banner" aria-label="Special Offer Banner">
         <div class="container">
-          <p class="special-offer__text">
+          <p class="header-banner-text">
             Special Halloween Offer &#8211; Free Delivery Over &#36;90
           </p>
         </div>
       </div>
 
-      <div class="container" role="grid">
-        <div role="row">
-          <div role="gridcell">
-            <span class="sr-only">Bad Ass Labs</span>
-            <img src="/images/badass-labs-type.png" alt="Bad Ass Labs" class="header__logo" />
-          </div>
+      <nav class="header-nav" aria-label="Header's Navigation">
+        <div class="container" role="grid">
+          <div role="row">
+            <div role="gridcell">
+              <span class="sr-only">Badass Labs' Logo</span>
+              <img src="/images/badass-labs-type.png" alt="Badass Labs" class="header-nav-logo" />
+            </div>
 
-          <div role="gridcell">
-            <span class="sr-only">Shopping Cart</span>
-            <div class="header__shopping-cart">
-              <button>&nbsp;</button>
-              <span class="shopping-cart-items">2</span>
+            <div role="gridcell">
+              <span class="sr-only">Shopping Cart</span>
+              <button href="/" class="header-button" role="button"></button>
             </div>
           </div>
         </div>
-      </div>
+      </nav>
     </header>
 
     <main>
@@ -98,7 +97,7 @@
 
                       <p class="product-feedback__text">
                         "I was extremely sceptical about buying car care products. I finally decided
-                        to do my own research and found Nano Shield. I’ve never had more people ask
+                        to do my own research and found Nano Shield. I've never had more people ask
                         me if I got a new car when my car is actually 7 years old!!!" &#8211; Shane
                         J.
                       </p>
@@ -532,7 +531,7 @@
 
         <img src="/images/badass-labs-type.png" alt="Bad Ass Labs" class="footer-logo" />
 
-        <nav class="footer-nav">
+        <nav class="footer-nav" aria-label="Footer Navigation">
           <a href="/">Privacy Policy</a>
           <a href="/">Refund Policy</a>
           <a href="/">Terms and Conditions</a>
