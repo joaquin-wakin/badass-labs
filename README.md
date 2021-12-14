@@ -2,6 +2,8 @@
 
 Waterless wash, unmatched shine, and graphene nano protection for months!
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/95e59122-94d5-496d-8993-1ad85fb07578/deploy-status)](https://app.netlify.com/sites/badasslabs/deploys)
+
 ## Run Locally
 
 1. Download or clone the project
