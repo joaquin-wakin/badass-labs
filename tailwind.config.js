@@ -4,8 +4,7 @@ const plugin = require('tailwindcss/plugin');
 
 module.exports = {
   mode: 'jit',
-  purge: [path.join(__dirname, 'index.html'), path.join(__dirname, 'src/**/*.js')],
-  darkMode: false, // or 'media' or 'class'
+  content: [path.join(__dirname, 'index.html'), path.join(__dirname, 'src/**/*.js')],
   theme: {
     container: {
       center: true,
